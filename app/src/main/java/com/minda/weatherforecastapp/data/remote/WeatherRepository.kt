@@ -1,6 +1,7 @@
 package com.minda.weatherforecastapp.data.remote
 
 import android.util.Log
+import com.minda.weatherforecastapp.BuildConfig
 import com.minda.weatherforecastapp.data.local.WeatherDao
 import com.minda.weatherforecastapp.data.WeatherEntity
 import com.minda.weatherforecastapp.data.mapper.toEntity
@@ -29,8 +30,9 @@ class WeatherRepository @Inject constructor(
     suspend fun getWeather(city: String): List<WeatherEntity> {
         return try {
             println("GET Weather VM")
+            val apiKey = BuildConfig.OPENWEATHER_API_KEY
 
-            val response = api.getForecastApi(city, apiKey = "704f31959c080f80046dc4338c75f646")
+            val response = api.getForecastApi(city, apiKey = apiKey)
             println("GET Weather VM$response")
             Log.e("GET weather","Load Weather VM")
 

@@ -74,7 +74,7 @@ fun WeatherForecastScreen(    viewModel: WeatherViewModel = hiltViewModel()
         )
 
         Button(modifier = Modifier.align(Alignment.CenterHorizontally), onClick = {
-            viewModel.process(WeatherIntent.SearchByCity(city))
+            viewModel.process(WeatherIntent.SearchByCity(city.trim()))
         }) {
             Text("Get Weather")
 
