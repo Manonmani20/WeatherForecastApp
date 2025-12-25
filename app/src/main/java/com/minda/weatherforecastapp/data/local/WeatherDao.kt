@@ -1,9 +1,10 @@
-package com.minda.weatherforecastapp.data
+package com.minda.weatherforecastapp.data.local
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import com.minda.weatherforecastapp.data.WeatherEntity
 
 @Dao
 interface WeatherDao1 {

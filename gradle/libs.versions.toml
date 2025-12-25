@@ -6,8 +6,8 @@ junit = "4.13.2"
 junitVersion = "1.3.0"
 espressoCore = "3.7.0"
 lifecycleRuntimeKtx = "2.6.2"
-activityCompose = "1.6.2"
-composeBom = "2025.12.00"
+activityCompose = "1.7.2"
+composeBom = "2024.02.00"
 room = "2.6.1"
 hilt = "2.49"
 hiltNavigationCompose = "1.2.0"
@@ -34,7 +34,6 @@ room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
 hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
-javapoet = { group = "com.squareup", name = "javapoet", version = "1.13.0" }
 
 
 [plugins]
